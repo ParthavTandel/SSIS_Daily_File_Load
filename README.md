@@ -38,11 +38,11 @@ Step 2: Foreach Loop Container for selecting files. (folder directory is hard co
 
 <img width="617" alt="ForEachLoop" src="https://user-images.githubusercontent.com/118220804/211173334-6afcbddd-d1c0-40c2-8604-b2e90582224b.png">
 
-Step 3: SQL statement will check if file is loaded or not. if file is not loaded and filetype is not excel(xlsx) then left path will go ahead.
+Step 3: SQL statement will check if file is loaded or not. If file is not loaded, count of filename in log table will be 0, this result will be stored is variable called isloaded. If isloaded = 0 and filetype != "xlsx" then left path will be followed.
 
 <img width="548" alt="CheckingFileLoaded" src="https://user-images.githubusercontent.com/118220804/211173472-618773fd-ee44-40e6-92b5-f555c52905a1.png">
 
-If file is not loaded and it is an excel file(xlsx) then right path will be followed.
+If isloaded = 0 and filetype = "xlsx" then then right path will be followed.
 
 <img width="464" alt="excelpath" src="https://user-images.githubusercontent.com/118220804/211173551-68c2056b-4da9-4013-b8e5-c069c2b7165e.png">
 
