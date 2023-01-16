@@ -1,3 +1,4 @@
+# SSIS_Daily_File_Load
 ETL Solution for automatic data transfer from files in computer directory to a Database
 
 <img width="790" alt="SSISMainPipeline" src="https://user-images.githubusercontent.com/118220804/211172805-c34dd08f-02d2-41f9-9a9b-d899b24eadbb.png">
@@ -62,20 +63,3 @@ Step 7: Successfully loaded files will be moved to archive folder. Then foreach 
 Event handlers: Package level event handlers are added at on_error, pre_execution and post_execution. SQL scripts will add entry in ErrorLog and RunningLog tables.
 
 <img width="473" alt="OnErrorEvent" src="https://user-images.githubusercontent.com/118220804/211173851-934f1cf7-b89c-4a96-adb6-4a3893383dfb.png">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
